@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNLOCK - Sistema Completo di Sviluppo Personale | Enrico La Noce</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);background-attachment:fixed;min-height:100vh;padding:20px;padding-top:80px;color:#333;line-height:1.6}.page{display:none}.page.active{display:block;animation:fadeIn .5s}.language-selector{position:fixed;top:15px;left:50%;transform:translateX(-50%);z-index:2000;display:flex;gap:8px;background:rgba(255,255,255,.98);padding:8px 12px;border-radius:20px;box-shadow:0 4px 15px rgba(0,0,0,.15);backdrop-filter:blur(10px)}.lang-btn{background:0 0;border:2px solid transparent;padding:6px 14px;border-radius:15px;cursor:pointer;font-weight:600;font-size:.85rem;transition:all .3s;color:#666;display:flex;align-items:center;gap:5px}.lang-btn:hover{background:#f0f0f0}.lang-btn.active{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;box-shadow:0 2px 8px rgba(102,126,234,.3)}.video-btn{position:fixed;top:15px;right:20px;z-index:2000;background:linear-gradient(135deg,#f093fb,#f5576c);color:#fff;border:none;padding:10px 20px;border-radius:20px;font-weight:600;font-size:.9rem;cursor:pointer;box-shadow:0 4px 15px rgba(240,147,251,.4);transition:all .3s;display:flex;align-items:center;gap:8px}.video-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(240,147,251,.6)}header{text-align:center;color:#fff;margin-bottom:30px;margin-top:20px}.logo{font-size:3.5rem;font-weight:900;letter-spacing:8px;text-shadow:3px 3px 6px rgba(0,0,0,.3);margin-bottom:10px}.tagline{font-size:1.1rem;opacity:.95;font-weight:300;letter-spacing:2px}.credits{font-size:.9rem;opacity:.85;margin-top:10px;font-weight:300}.container{max-width:900px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);padding:40px}.progress-container{margin-bottom:40px}.progress-bar{width:100%;height:8px;background:#e0e0e0;border-radius:10px;overflow:hidden;margin-bottom:10px}.progress-fill{height:100%;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:10px;transition:width .4s;width:16.66%}.progress-text{text-align:center;color:#666;font-size:.9rem;font-weight:600}.section{display:none}.section.active{display:block}.section-title{font-size:2rem;color:#667eea;margin-bottom:10px;font-weight:700}.section-subtitle{color:#888;margin-bottom:30px;font-size:1.1rem}.question{margin-bottom:25px}.question-label{display:block;font-weight:600;color:#333;margin-bottom:8px;font-size:1.05rem}.question-hint{display:block;font-size:.85rem;color:#999;margin-bottom:8px;font-style:italic}input[type=text],textarea{width:100%;padding:12px 16px;border:2px solid #e0e0e0;border-radius:10px;font-size:1rem;font-family:inherit;transition:border-color .3s;background:#fff}input[type=text]:focus,textarea:focus{outline:0;border-color:#667eea}input::placeholder,textarea::placeholder{color:#bbb;font-style:italic;opacity:1}textarea{min-height:120px;resize:vertical}.button-group{display:flex;gap:15px;margin-top:40px;justify-content:center;flex-wrap:wrap}button{padding:14px 32px;font-size:1rem;font-weight:600;border:none;border-radius:10px;cursor:pointer;transition:all .3s;font-family:inherit}.btn-primary{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(102,126,234,.4)}.btn-secondary{background:#f0f0f0;color:#666}.btn-secondary:hover{background:#e0e0e0}.btn-success{background:linear-gradient(135deg,#11998e,#38ef7d);color:#fff}.btn-success:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(17,153,142,.4)}.btn-premium{background:linear-gradient(135deg,#f093fb,#f5576c);color:#fff;padding:18px 50px;font-size:1.2rem;font-weight:700;border:none;border-radius:12px;cursor:pointer;transition:all .3s;width:100%;margin-top:20px}.btn-premium:hover{transform:translateY(-2px);box-shadow:0 15px 35px rgba(245,87,108,.5)}.modal{display:none;position:fixed;z-index:3000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.85);backdrop-filter:blur(5px)}.modal.active{display:flex;align-items:center;justify-content:center;animation:fadeIn .3s}.modal-content{background:#fff;padding:40px;border-radius:20px;max-width:600px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.3);position:relative}.modal-close{position:absolute;top:15px;right:15px;background:rgba(0,0,0,.1);border:none;width:35px;height:35px;border-radius:50%;cursor:pointer;font-size:1.5rem;color:#666;display:flex;align-items:center;justify-content:center;transition:all .3s}.modal-close:hover{background:rgba(0,0,0,.2);transform:rotate(90deg)}.video-modal-content{background:#000;padding:0;max-width:90vw;width:1200px;border-radius:15px;overflow:hidden}.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}.video-container video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain}.modal-title{font-size:1.5rem;color:#667eea;margin-bottom:20px;font-weight:700}.modal-question{font-size:1.1rem;color:#333;margin-bottom:20px;line-height:1.6}.modal-input{width:100%;padding:15px;border:2px solid #667eea;border-radius:10px;font-size:1rem;margin-bottom:20px;min-height:100px;font-family:inherit}.modal-buttons{display:flex;gap:15px;justify-content:flex-end}.final-section{text-align:center;padding:40px 20px}.final-section h2{font-size:2.5rem;color:#667eea;margin-bottom:20px}.final-section p{font-size:1.2rem;color:#666;margin-bottom:40px}.mind-map{background:#fff;border-radius:20px;padding:40px;margin:30px 0;box-shadow:0 10px 40px rgba(0,0,0,.1)}.map-center{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:30px;border-radius:20px;margin:0 auto 40px;max-width:500px;text-align:center;box-shadow:0 10px 30px rgba(102,126,234,.3)}.map-center h3{font-size:1.8rem;margin-bottom:15px}.map-branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:30px}.branch{background:linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);padding:25px;border-radius:15px;border-left:5px solid #667eea;transition:all .3s}.branch:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,.15)}.branch-title{font-size:1.2rem;font-weight:700;color:#667eea;margin-bottom:12px;display:flex;align-items:center;gap:10px}.branch-content{color:#555;font-size:.95rem;line-height:1.7}.result-container{background:#fff;border-radius:20px;padding:40px;margin:30px 0;box-shadow:0 10px 40px rgba(0,0,0,.1)}.result-header{text-align:center;margin-bottom:30px}.result-header h3{font-size:2rem;color:#667eea;margin-bottom:10px}.result-info{background:#f8f9fa;border:2px solid #667eea;border-radius:15px;padding:30px;margin-bottom:30px;text-align:center}.result-info p{font-size:1.1rem;color:#555;line-height:1.8;margin-bottom:15px}.result-info strong{color:#667eea}.share-buttons{display:flex;gap:15px;justify-content:center;margin-top:30px;flex-wrap:wrap}.btn-claude,.btn-chatgpt{padding:18px 50px;font-size:1.2rem;font-weight:700;border-radius:12px;border:none;cursor:pointer;transition:all .3s;color:#fff;display:inline-flex;align-items:center;gap:10px}.btn-claude{background:linear-gradient(135deg,#d4a574,#b8860b)}.btn-claude:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(212,165,116,.4)}.btn-chatgpt{background:linear-gradient(135deg,#10a37f,#1a7f64)}.btn-chatgpt:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(16,163,127,.4)}.copy-notification{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#11998e;color:#fff;padding:30px 50px;border-radius:20px;font-size:1.1rem;font-weight:600;box-shadow:0 15px 50px rgba(0,0,0,.4);z-index:4000;opacity:0;pointer-events:none;transition:opacity .3s;text-align:center;max-width:90%;line-height:1.8}.copy-notification.show{opacity:1;pointer-events:all}.copy-notification-icon{font-size:3rem;margin-bottom:15px;animation:checkmark .5s ease}.copy-notification-title{font-size:1.4rem;font-weight:700;margin-bottom:10px}.copy-notification-text{font-size:1rem;opacity:.95;margin-bottom:15px}.copy-notification-instruction{background:rgba(255,255,255,.2);padding:12px 20px;border-radius:10px;font-size:1.05rem;font-weight:700;margin-top:10px;border:2px dashed rgba(255,255,255,.5)}.footer-credits{text-align:center;color:#fff;margin-top:40px;padding:20px;opacity:.9}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes checkmark{0%{transform:scale(0)}50%{transform:scale(1.2)}100%{transform:scale(1)}}@media (max-width:768px){body{padding-top:120px}.container{padding:25px}.logo{font-size:2.5rem;letter-spacing:4px}.button-group,.share-buttons{flex-direction:column}button,.btn-claude,.btn-chatgpt{width:100%}.map-branches{grid-template-columns:1fr}.language-selector{top:10px;padding:6px 10px;gap:6px;left:10px;transform:none}.lang-btn{padding:5px 10px;font-size:.8rem}.video-btn{top:60px;right:10px;left:10px;justify-content:center;font-size:.85rem;padding:8px 15px}.copy-notification{padding:25px 30px;font-size:1rem}.copy-notification-icon{font-size:2.5rem}.copy-notification-title{font-size:1.2rem}.copy-notification-instruction{font-size:.95rem}.video-modal-content{max-width:95vw}}
+</style>
+</head>
+<body>
+
+<!-- VIDEO MODAL -->
+
+<div class="modal" id="videoModal">
+<div class="modal-content video-modal-content">
+<button class="modal-close" onclick="closeVideoModal()">✕</button>
+<div class="video-container">
+<video id="tutorialVideo" controls>
+<source src="video-tutorial.mp4" type="video/mp4">
+Il tuo browser non supporta il tag video.
+</video>
+</div>
+</div>
+</div>
+
+<!-- COPY NOTIFICATION -->
+
+<div class="copy-notification" id="copyNotification">
+<div class="copy-notification-icon">✅</div>
+<div class="copy-notification-title" data-i18n="notif_title">Prompt Copiato!</div>
+<div class="copy-notification-text" data-i18n="notif_text">Il prompt è stato copiato negli appunti</div>
+<div class="copy-notification-instruction" data-i18n="notif_instruction">Ora fai CTRL+V (o CMD+V) per incollare</div>
+</div>
+
+<!-- LANGUAGE SELECTOR -->
+
+<div class="language-selector">
+<button class="lang-btn active" onclick="changeLanguage('it')" data-lang="it">
+<span>🇮🇹</span>
+<span>IT</span>
+</button>
+<button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">
+<span>🇬🇧</span>
+<span>EN</span>
+</button>
+<button class="lang-btn" onclick="changeLanguage('fr')" data-lang="fr">
+<span>🇫🇷</span>
+<span>FR</span>
+</button>
+</div>
+
+<!-- VIDEO BUTTON -->
+
+<button class="video-btn" onclick="openVideoModal()">
+<span>🎬</span>
+<span data-i18n="btn_video">Guarda Video Esplicativo</span>
+</button>
+
+<!-- METAMODEL MODAL -->
+
+<div id="metamodelModal" class="modal">
+<div class="modal-content">
+<button class="modal-close" onclick="closeMetamodelModal()">✕</button>
+<div class="modal-title" data-i18n="modal_title">🔍 Affina la tua risposta</div>
+<div class="modal-question" id="metamodelQuestion"></div>
+<textarea class="modal-input" id="metamodelInput" data-i18n-placeholder="modal_placeholder"></textarea>
+<div class="modal-buttons">
+<button class="btn-secondary" onclick="skipMetamodel()" data-i18n="btn_skip">Salta</button>
+<button class="btn-primary" onclick="confirmMetamodel()" data-i18n="btn_confirm">Conferma</button>
+</div>
+</div>
+</div>
+
+<div id="formPage" class="page active">
+<header>
+<h1 class="logo">UNLOCK</h1>
+<p class="tagline" data-i18n="tagline">Sistema Completo di Sviluppo Personale</p>
+<p class="credits">Enrico La Noce</p>
+</header>
+
+<div class="container">
+<div class="progress-container">
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+<div class="progress-text" id="progressText">Step 1 / 6</div>
+</div>
+
+<div id="section1" class="section active">
+<h2 class="section-title" data-i18n="s1_title">Conosciamoci</h2>
+<p class="section-subtitle" data-i18n="s1_subtitle">Iniziamo con qualche informazione su di te</p>
+<div class="question">
+<label class="question-label" data-i18n="q_name">Come ti chiami?</label>
+<input type="text" id="nome" data-i18n-placeholder="ph_name">
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_current">Cosa fai attualmente?</label>
+<span class="question-hint" data-i18n="q_current_hint">Lavoro, studi, passioni...</span>
+<textarea id="situazioneAttuale" data-i18n-placeholder="ph_current"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_day">Descrivi una giornata tipo</label>
+<textarea id="giornataTipo" data-i18n-placeholder="ph_day"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-primary" onclick="validateAndContinue(1,2)" data-i18n="btn_continue">Continua →</button>
+</div>
+</div>
+
+<div id="section2" class="section">
+<h2 class="section-title" data-i18n="s2_title">Scopri te stesso</h2>
+<p class="section-subtitle" data-i18n="s2_subtitle">Esplora ciò che ti motiva davvero</p>
+<div class="question">
+<label class="question-label" data-i18n="q_fulfilled">Cosa ti fa sentire realizzato?</label>
+<textarea id="realizzazione" data-i18n-placeholder="ph_fulfilled"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_flow">In cosa perdi la cognizione del tempo?</label>
+<textarea id="flow" data-i18n-placeholder="ph_flow"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_dream">Se potessi fare qualsiasi cosa, cosa faresti?</label>
+<textarea id="sogno" data-i18n-placeholder="ph_dream"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_future">Come vorresti essere descritto tra 5 anni?</label>
+<textarea id="futuro" data-i18n-placeholder="ph_future"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_values">Valori fondamentali</label>
+<span class="question-hint" data-i18n="q_values_hint">Cosa conta davvero per te?</span>
+<textarea id="valori" data-i18n-placeholder="ph_values"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-secondary" onclick="goToSection(1)" data-i18n="btn_back">← Indietro</button>
+<button class="btn-primary" onclick="validateAndContinue(2,3)" data-i18n="btn_continue">Continua →</button>
+</div>
+</div>
+
+<div id="section3" class="section">
+<h2 class="section-title" data-i18n="s3_title">Il tuo obiettivo</h2>
+<p class="section-subtitle" data-i18n="s3_subtitle">Definiamo il tuo traguardo principale</p>
+<div class="question">
+<label class="question-label" data-i18n="q_goal">Obiettivo principale</label>
+<span class="question-hint" data-i18n="q_goal_hint">Cosa vuoi raggiungere?</span>
+<textarea id="obiettivo" data-i18n-placeholder="ph_goal"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_why">Perché è importante?</label>
+<textarea id="motivazione" data-i18n-placeholder="ph_why"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_measure">Come lo misuri?</label>
+<span class="question-hint" data-i18n="q_measure_hint">Parametri concreti di successo</span>
+<textarea id="misura" data-i18n-placeholder="ph_measure"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_deadline">Entro quando?</label>
+<input type="text" id="scadenza" data-i18n-placeholder="ph_deadline">
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_impact">Cosa cambierà nella tua vita?</label>
+<textarea id="impatto" data-i18n-placeholder="ph_impact"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-secondary" onclick="goToSection(2)" data-i18n="btn_back">← Indietro</button>
+<button class="btn-primary" onclick="validateAndContinue(3,4)" data-i18n="btn_continue">Continua →</button>
+</div>
+</div>
+
+<div id="section4" class="section">
+<h2 class="section-title" data-i18n="s4_title">Le tue risorse</h2>
+<p class="section-subtitle" data-i18n="s4_subtitle">Scopri i tuoi punti di forza</p>
+<div class="question">
+<label class="question-label" data-i18n="q_peak">Ricorda un momento in cui eri al massimo</label>
+<span class="question-hint" data-i18n="q_peak_hint">Un momento in cui tutto funzionava perfettamente</span>
+<textarea id="momentoRisorsa" data-i18n-placeholder="ph_peak"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_actions">Cosa hai fatto esattamente?</label>
+<textarea id="azioniRisorsa" data-i18n-placeholder="ph_actions"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_physical">Come ti sentivi fisicamente?</label>
+<span class="question-hint" data-i18n="q_physical_hint">Energia, postura, sensazioni corporee</span>
+<textarea id="sensazioniRisorsa" data-i18n-placeholder="ph_physical"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_other_resources">Altre risorse che possiedi</label>
+<span class="question-hint" data-i18n="q_other_resources_hint">Competenze, talenti, esperienze</span>
+<textarea id="altreRisorse" data-i18n-placeholder="ph_other_resources"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_activate">Come riattivare queste risorse?</label>
+<textarea id="riattivazioneRisorse" data-i18n-placeholder="ph_activate"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-secondary" onclick="goToSection(3)" data-i18n="btn_back">← Indietro</button>
+<button class="btn-primary" onclick="validateAndContinue(4,5)" data-i18n="btn_continue">Continua →</button>
+</div>
+</div>
+
+<div id="section5" class="section">
+<h2 class="section-title" data-i18n="s5_title">Analisi della situazione</h2>
+<p class="section-subtitle" data-i18n="s5_subtitle">Valutiamo il contesto attuale</p>
+<div class="question">
+<label class="question-label" data-i18n="q_resources">Risorse materiali e competenze</label>
+<span class="question-hint" data-i18n="q_resources_hint">Soldi, tempo, strumenti, conoscenze</span>
+<textarea id="risorse" data-i18n-placeholder="ph_resources"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_missing">Cosa ti manca?</label>
+<textarea id="mancanze" data-i18n-placeholder="ph_missing"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_obstacles">Ostacoli e sfide</label>
+<span class="question-hint" data-i18n="q_obstacles_hint">Cosa potrebbe fermarti?</span>
+<textarea id="ostacoli" data-i18n-placeholder="ph_obstacles"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_risks">Rischi possibili</label>
+<textarea id="rischi" data-i18n-placeholder="ph_risks"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_opportunities">Opportunità</label>
+<span class="question-hint" data-i18n="q_opportunities_hint">Cosa puoi sfruttare a tuo favore?</span>
+<textarea id="opportunita" data-i18n-placeholder="ph_opportunities"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-secondary" onclick="goToSection(4)" data-i18n="btn_back">← Indietro</button>
+<button class="btn-primary" onclick="validateAndContinue(5,6)" data-i18n="btn_continue">Continua →</button>
+</div>
+</div>
+
+<div id="section6" class="section">
+<h2 class="section-title" data-i18n="s6_title">Piano d'azione</h2>
+<p class="section-subtitle" data-i18n="s6_subtitle">Come arriverai al tuo obiettivo</p>
+<div class="question">
+<label class="question-label" data-i18n="q_first_step">Primo passo concreto</label>
+<span class="question-hint" data-i18n="q_first_step_hint">Cosa farai nei prossimi 7 giorni?</span>
+<textarea id="primoStep" data-i18n-placeholder="ph_first_step"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_next_steps">5 step successivi</label>
+<textarea id="stepSuccessivi" data-i18n-placeholder="ph_next_steps"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_support">Chi può aiutarti?</label>
+<span class="question-hint" data-i18n="q_support_hint">Mentor, colleghi, esperti</span>
+<textarea id="supporto" data-i18n-placeholder="ph_support"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_contacts">Persone da contattare</label>
+<textarea id="supportoPersone" data-i18n-placeholder="ph_contacts"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_motivation">Come resterai motivato?</label>
+<textarea id="motivazionePiano" data-i18n-placeholder="ph_motivation"></textarea>
+</div>
+<div class="question">
+<label class="question-label" data-i18n="q_milestones">Milestone</label>
+<span class="question-hint" data-i18n="q_milestones_hint">Traguardi intermedi da celebrare</span>
+<textarea id="milestone" data-i18n-placeholder="ph_milestones"></textarea>
+</div>
+<div class="button-group">
+<button class="btn-secondary" onclick="goToSection(5)" data-i18n="btn_back">← Indietro</button>
+<button class="btn-success" onclick="goToFinal()" data-i18n="btn_complete">Completa →</button>
+</div>
+</div>
+
+<div id="finalSection" class="section">
+<div class="final-section">
+<h2 data-i18n="final_congrats">🎯 Complimenti!</h2>
+<p data-i18n="final_text">Ora generiamo la tua strategia completa.</p>
+<button class="btn-premium" onclick="generateStrategy()" data-i18n="btn_generate">✨ Genera Strategia</button>
+<div class="button-group" style="margin-top:30px">
+<button class="btn-secondary" onclick="goToSection(6)" data-i18n="btn_edit">← Modifica</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="resultPage" class="page">
+<header>
+<h1 class="logo">UNLOCK</h1>
+<p class="tagline" data-i18n="result_tagline">La Tua Strategia</p>
+<p class="credits">Enrico La Noce</p>
+</header>
+<div class="container">
+<div class="mind-map">
+<div class="map-center" id="mapCenter">
+<h3 data-i18n="map_title">🎯 IL TUO OBIETTIVO</h3>
+<p id="mapObjective"></p>
+</div>
+<div class="map-branches" id="mapBranches"></div>
+</div>
+
+<div class="result-container">
+<div class="result-header">
+<h3 data-i18n="result_ready">📝 La Tua Strategia è Pronta!</h3>
+</div>
+<div class="result-info">
+<p><strong data-i18n="result_instructions">Clicca su uno dei pulsanti per copiare il prompt e aprire l'AI:</strong></p>
+<p data-i18n="result_cta">Il prompt verrà copiato automaticamente. Poi fai CTRL+V (o CMD+V) per incollarlo nella chat!</p>
+</div>
+<div class="share-buttons">
+<button class="btn-claude" onclick="openClaude()">
+<span>🤖</span>
+<span data-i18n="btn_open_claude">Apri con Claude</span>
+</button>
+<button class="btn-chatgpt" onclick="openChatGPT()">
+<span>💬</span>
+<span data-i18n="btn_open_chatgpt">Apri con ChatGPT</span>
+</button>
+</div>
+<div class="button-group" style="margin-top:30px">
+<button class="btn-secondary" onclick="backToForm()" data-i18n="btn_back_form">← Torna al Form</button>
+<button class="btn-success" onclick="downloadStrategy()" data-i18n="btn_download">💾 Scarica Strategia</button>
+</div>
+</div>
+
+</div>
+<div class="footer-credits">
+<p><strong>UNLOCK</strong> - <span data-i18n="footer_system">Sistema PNL</span></p>
+<p>Enrico La Noce</p>
+</div>
+</div>
+
+<script>
+console.log('🚀 UNLOCK - VERSIONE FINALE | Enrico La Noce');
+
+// TRADUZIONI COMPLETE
+const TRANSLATIONS = {
+  it: {
+    btn_video: 'Guarda Video Esplicativo',
+    notif_title: 'Prompt Copiato!',
+    notif_text: 'Il prompt è stato copiato negli appunti',
+    notif_instruction: 'Ora fai CTRL+V (o CMD+V) per incollare',
+    tagline: 'Sistema Completo di Sviluppo Personale',
+    modal_title: '🔍 Affina la tua risposta',
+    modal_placeholder: 'Scrivi qui la tua risposta più specifica...',
+    btn_skip: 'Salta',
+    btn_confirm: 'Conferma',
+    btn_continue: 'Continua →',
+    btn_back: '← Indietro',
+    btn_complete: 'Completa →',
+    btn_generate: '✨ Genera Strategia',
+    btn_edit: '← Modifica',
+    btn_open_claude: 'Apri con Claude',
+    btn_open_chatgpt: 'Apri con ChatGPT',
+    btn_back_form: '← Torna al Form',
+    btn_download: '💾 Scarica Strategia',
+    s1_title: 'Conosciamoci',
+    s1_subtitle: 'Iniziamo con qualche informazione su di te',
+    q_name: 'Come ti chiami?',
+    ph_name: 'Es: Marco Rossi',
+    q_current: 'Cosa fai attualmente?',
+    q_current_hint: 'Lavoro, studi, passioni...',
+    ph_current: 'Es: Lavoro come sviluppatore web freelance e sto costruendo il mio primo SaaS...',
+    q_day: 'Descrivi una giornata tipo',
+    ph_day: 'Es: Mi sveglio alle 7, faccio colazione veloce, lavoro sui progetti dei clienti fino alle 13...',
+    s2_title: 'Scopri te stesso',
+    s2_subtitle: 'Esplora ciò che ti motiva davvero',
+    q_fulfilled: 'Cosa ti fa sentire realizzato?',
+    ph_fulfilled: 'Es: Mi sento realizzato quando creo qualcosa da zero che funziona...',
+    q_flow: 'In cosa perdi la cognizione del tempo?',
+    ph_flow: 'Es: Quando programmo, specialmente quando risolvo problemi complessi...',
+    q_dream: 'Se potessi fare qualsiasi cosa, cosa faresti?',
+    ph_dream: 'Es: Vorrei creare una startup tech di successo...',
+    q_future: 'Come vorresti essere descritto tra 5 anni?',
+    ph_future: 'Es: Fondatore di una startup SaaS B2B di successo...',
+    q_values: 'Valori fondamentali',
+    q_values_hint: 'Cosa conta davvero per te?',
+    ph_values: 'Es: Libertà, creatività, impatto positivo...',
+    s3_title: 'Il tuo obiettivo',
+    s3_subtitle: 'Definiamo il tuo traguardo principale',
+    q_goal: 'Obiettivo principale',
+    q_goal_hint: 'Cosa vuoi raggiungere?',
+    ph_goal: 'Es: Lanciare la mia prima SaaS B2B e raggiungere 10K MRR entro 18 mesi...',
+    q_why: 'Perché è importante?',
+    ph_why: 'Es: Mi permetterebbe di avere libertà finanziaria...',
+    q_measure: 'Come lo misuri?',
+    q_measure_hint: 'Parametri concreti di successo',
+    ph_measure: 'Es: MRR mensile, numero di clienti paganti...',
+    q_deadline: 'Entro quando?',
+    ph_deadline: 'Es: Giugno 2026 (18 mesi)',
+    q_impact: 'Cosa cambierà nella tua vita?',
+    ph_impact: 'Es: Avrò maggiore libertà di scegliere i progetti...',
+    s4_title: 'Le tue risorse',
+    s4_subtitle: 'Scopri i tuoi punti di forza',
+    q_peak: 'Ricorda un momento in cui eri al massimo',
+    q_peak_hint: 'Un momento in cui tutto funzionava perfettamente',
+    ph_peak: 'Es: L\'anno scorso quando ho completato un progetto complesso...',
+    q_actions: 'Cosa hai fatto esattamente?',
+    ph_actions: 'Es: Mi sono organizzato con un planning preciso...',
+    q_physical: 'Come ti sentivi fisicamente?',
+    q_physical_hint: 'Energia, postura, sensazioni corporee',
+    ph_physical: 'Es: Energico, concentrato, postura eretta...',
+    q_other_resources: 'Altre risorse che possiedi',
+    q_other_resources_hint: 'Competenze, talenti, esperienze',
+    ph_other_resources: 'Es: Competenze tecniche avanzate...',
+    q_activate: 'Come riattivare queste risorse?',
+    ph_activate: 'Es: Creare una routine mattutina...',
+    s5_title: 'Analisi della situazione',
+    s5_subtitle: 'Valutiamo il contesto attuale',
+    q_resources: 'Risorse materiali e competenze',
+    q_resources_hint: 'Soldi, tempo, strumenti, conoscenze',
+    ph_resources: 'Es: Computer performante, budget di 5K...',
+    q_missing: 'Cosa ti manca?',
+    ph_missing: 'Es: Esperienza in marketing digitale...',
+    q_obstacles: 'Ostacoli e sfide',
+    q_obstacles_hint: 'Cosa potrebbe fermarti?',
+    ph_obstacles: 'Es: Bilanciare il lavoro attuale con il nuovo progetto...',
+    q_risks: 'Rischi possibili',
+    ph_risks: 'Es: Perdere clienti attuali...',
+    q_opportunities: 'Opportunità',
+    q_opportunities_hint: 'Cosa puoi sfruttare a tuo favore?',
+    ph_opportunities: 'Es: Mercato in crescita per tool B2B...',
+    s6_title: 'Piano d\'azione',
+    s6_subtitle: 'Come arriverai al tuo obiettivo',
+    q_first_step: 'Primo passo concreto',
+    q_first_step_hint: 'Cosa farai nei prossimi 7 giorni?',
+    ph_first_step: 'Es: Nei prossimi 7 giorni intervisterò 10 potenziali clienti...',
+    q_next_steps: '5 step successivi',
+    ph_next_steps: 'Es: 1) Creare un MVP in 4 settimane...',
+    q_support: 'Chi può aiutarti?',
+    q_support_hint: 'Mentor, colleghi, esperti',
+    ph_support: 'Es: Un mentor con esperienza in SaaS...',
+    q_contacts: 'Persone da contattare',
+    ph_contacts: 'Es: Giovanni (marketer amico)...',
+    q_motivation: 'Come resterai motivato?',
+    ph_motivation: 'Es: Celebrare ogni milestone...',
+    q_milestones: 'Milestone',
+    q_milestones_hint: 'Traguardi intermedi da celebrare',
+    ph_milestones: 'Es: Mese 1: Validazione idea...',
+    final_congrats: '🎯 Complimenti!',
+    final_text: 'Ora generiamo la tua strategia completa.',
+    result_tagline: 'La Tua Strategia',
+    map_title: '🎯 IL TUO OBIETTIVO',
+    result_ready: '📝 La Tua Strategia è Pronta!',
+    result_instructions: 'Clicca su uno dei pulsanti per copiare il prompt e aprire l\'AI:',
+    result_cta: 'Il prompt verrà copiato automaticamente. Poi fai CTRL+V (o CMD+V) per incollarlo nella chat!',
+    footer_system: 'Sistema PNL',
+    map_identity: '💎 IDENTITÀ & VALORI',
+    map_state: '⚡ STATO DI RISORSA',
+    map_motivation: '🎯 MOTIVAZIONE',
+    map_resources: '📊 RISORSE',
+    map_challenges: '⚠️ SFIDE',
+    map_plan: '🚀 PIANO'
+  },
+  en: {
+    btn_video: 'Watch Tutorial Video',
+    notif_title: 'Prompt Copied!',
+    notif_text: 'The prompt has been copied to clipboard',
+    notif_instruction: 'Now press CTRL+V (or CMD+V) to paste',
+    tagline: 'Complete Personal Development System',
+    modal_title: '🔍 Refine your answer',
+    modal_placeholder: 'Write your more specific answer here...',
+    btn_skip: 'Skip',
+    btn_confirm: 'Confirm',
+    btn_continue: 'Continue →',
+    btn_back: '← Back',
+    btn_complete: 'Complete →',
+    btn_generate: '✨ Generate Strategy',
+    btn_edit: '← Edit',
+    btn_open_claude: 'Open with Claude',
+    btn_open_chatgpt: 'Open with ChatGPT',
+    btn_back_form: '← Back to Form',
+    btn_download: '💾 Download Strategy',
+    s1_title: 'Get to Know You',
+    s1_subtitle: 'Let\'s start with some information about you',
+    q_name: 'What\'s your name?',
+    ph_name: 'E.g.: John Smith',
+    q_current: 'What do you currently do?',
+    q_current_hint: 'Work, studies, passions...',
+    ph_current: 'E.g.: I work as a freelance web developer...',
+    q_day: 'Describe a typical day',
+    ph_day: 'E.g.: I wake up at 7am, quick breakfast...',
+    s2_title: 'Discover Yourself',
+    s2_subtitle: 'Explore what truly motivates you',
+    q_fulfilled: 'What makes you feel fulfilled?',
+    ph_fulfilled: 'E.g.: I feel fulfilled when I create...',
+    q_flow: 'What makes you lose track of time?',
+    ph_flow: 'E.g.: When I code, especially...',
+    q_dream: 'If you could do anything, what would you do?',
+    ph_dream: 'E.g.: I would create a successful tech startup...',
+    q_future: 'How would you like to be described in 5 years?',
+    ph_future: 'E.g.: Founder of a successful B2B SaaS...',
+    q_values: 'Core values',
+    q_values_hint: 'What really matters to you?',
+    ph_values: 'E.g.: Freedom, creativity, positive impact...',
+    s3_title: 'Your Goal',
+    s3_subtitle: 'Let\'s define your main target',
+    q_goal: 'Main goal',
+    q_goal_hint: 'What do you want to achieve?',
+    ph_goal: 'E.g.: Launch my first B2B SaaS...',
+    q_why: 'Why is it important?',
+    ph_why: 'E.g.: It would give me financial freedom...',
+    q_measure: 'How do you measure it?',
+    q_measure_hint: 'Concrete success parameters',
+    ph_measure: 'E.g.: Monthly MRR, number of paying customers...',
+    q_deadline: 'By when?',
+    ph_deadline: 'E.g.: June 2026 (18 months)',
+    q_impact: 'What will change in your life?',
+    ph_impact: 'E.g.: I\'ll have more freedom...',
+    s4_title: 'Your Resources',
+    s4_subtitle: 'Discover your strengths',
+    q_peak: 'Remember a time when you were at your peak',
+    q_peak_hint: 'A moment when everything worked perfectly',
+    ph_peak: 'E.g.: Last year when I completed...',
+    q_actions: 'What exactly did you do?',
+    ph_actions: 'E.g.: I organized with a precise plan...',
+    q_physical: 'How did you feel physically?',
+    q_physical_hint: 'Energy, posture, body sensations',
+    ph_physical: 'E.g.: Energetic, focused...',
+    q_other_resources: 'Other resources you possess',
+    q_other_resources_hint: 'Skills, talents, experiences',
+    ph_other_resources: 'E.g.: Advanced technical skills...',
+    q_activate: 'How to reactivate these resources?',
+    ph_activate: 'E.g.: Create a morning routine...',
+    s5_title: 'Situation Analysis',
+    s5_subtitle: 'Let\'s evaluate the current context',
+    q_resources: 'Material resources and skills',
+    q_resources_hint: 'Money, time, tools, knowledge',
+    ph_resources: 'E.g.: High-performance computer...',
+    q_missing: 'What are you missing?',
+    ph_missing: 'E.g.: Digital marketing experience...',
+    q_obstacles: 'Obstacles and challenges',
+    q_obstacles_hint: 'What could stop you?',
+    ph_obstacles: 'E.g.: Balancing current work...',
+    q_risks: 'Possible risks',
+    ph_risks: 'E.g.: Losing current clients...',
+    q_opportunities: 'Opportunities',
+    q_opportunities_hint: 'What can you leverage?',
+    ph_opportunities: 'E.g.: Growing market for B2B tools...',
+    s6_title: 'Action Plan',
+    s6_subtitle: 'How you\'ll reach your goal',
+    q_first_step: 'First concrete step',
+    q_first_step_hint: 'What will you do in the next 7 days?',
+    ph_first_step: 'E.g.: In the next 7 days I will interview...',
+    q_next_steps: '5 next steps',
+    ph_next_steps: 'E.g.: 1) Create an MVP in 4 weeks...',
+    q_support: 'Who can help you?',
+    q_support_hint: 'Mentors, colleagues, experts',
+    ph_support: 'E.g.: A mentor with SaaS experience...',
+    q_contacts: 'People to contact',
+    ph_contacts: 'E.g.: John (marketer friend)...',
+    q_motivation: 'How will you stay motivated?',
+    ph_motivation: 'E.g.: Celebrate every milestone...',
+    q_milestones: 'Milestones',
+    q_milestones_hint: 'Intermediate goals to celebrate',
+    ph_milestones: 'E.g.: Month 1: Idea validation...',
+    final_congrats: '🎯 Congratulations!',
+    final_text: 'Now let\'s generate your complete strategy.',
+    result_tagline: 'Your Strategy',
+    map_title: '🎯 YOUR GOAL',
+    result_ready: '📝 Your Strategy is Ready!',
+    result_instructions: 'Click one of the buttons to copy the prompt and open the AI:',
+    result_cta: 'The prompt will be automatically copied. Then press CTRL+V (or CMD+V) to paste it in the chat!',
+    footer_system: 'NLP System',
+    map_identity: '💎 IDENTITY & VALUES',
+    map_state: '⚡ RESOURCE STATE',
+    map_motivation: '🎯 MOTIVATION',
+    map_resources: '📊 RESOURCES',
+    map_challenges: '⚠️ CHALLENGES',
+    map_plan: '🚀 PLAN'
+  },
+  fr: {
+    btn_video: 'Regarder la Vidéo Tutoriel',
+    notif_title: 'Prompt Copié!',
+    notif_text: 'Le prompt a été copié dans le presse-papiers',
+    notif_instruction: 'Appuyez sur CTRL+V (ou CMD+V) pour coller',
+    tagline: 'Système Complet de Développement Personnel',
+    modal_title: '🔍 Affinez votre réponse',
+    modal_placeholder: 'Écrivez ici votre réponse plus spécifique...',
+    btn_skip: 'Passer',
+    btn_confirm: 'Confirmer',
+    btn_continue: 'Continuer →',
+    btn_back: '← Retour',
+    btn_complete: 'Terminer →',
+    btn_generate: '✨ Générer la Stratégie',
+    btn_edit: '← Modifier',
+    btn_open_claude: 'Ouvrir avec Claude',
+    btn_open_chatgpt: 'Ouvrir avec ChatGPT',
+    btn_back_form: '← Retour au Formulaire',
+    btn_download: '💾 Télécharger la Stratégie',
+    s1_title: 'Faisons connaissance',
+    s1_subtitle: 'Commençons par quelques informations sur vous',
+    q_name: 'Comment vous appelez-vous?',
+    ph_name: 'Ex: Jean Dupont',
+    q_current: 'Que faites-vous actuellement?',
+    q_current_hint: 'Travail, études, passions...',
+    ph_current: 'Ex: Je travaille comme développeur web freelance...',
+    q_day: 'Décrivez une journée type',
+    ph_day: 'Ex: Je me réveille à 7h, petit déjeuner rapide...',
+    s2_title: 'Découvrez-vous',
+    s2_subtitle: 'Explorez ce qui vous motive vraiment',
+    q_fulfilled: 'Qu\'est-ce qui vous fait vous sentir accompli?',
+    ph_fulfilled: 'Ex: Je me sens accompli quand je crée...',
+    q_flow: 'Dans quoi perdez-vous la notion du temps?',
+    ph_flow: 'Ex: Quand je code, surtout quand...',
+    q_dream: 'Si vous pouviez faire n\'importe quoi, que feriez-vous?',
+    ph_dream: 'Ex: Je voudrais créer une startup tech à succès...',
+    q_future: 'Comment aimeriez-vous être décrit dans 5 ans?',
+    ph_future: 'Ex: Fondateur d\'une startup SaaS B2B à succès...',
+    q_values: 'Valeurs fondamentales',
+    q_values_hint: 'Qu\'est-ce qui compte vraiment pour vous?',
+    ph_values: 'Ex: Liberté, créativité, impact positif...',
+    s3_title: 'Votre objectif',
+    s3_subtitle: 'Définissons votre objectif principal',
+    q_goal: 'Objectif principal',
+    q_goal_hint: 'Que voulez-vous atteindre?',
+    ph_goal: 'Ex: Lancer mon premier SaaS B2B...',
+    q_why: 'Pourquoi est-ce important?',
+    ph_why: 'Ex: Cela me donnerait la liberté financière...',
+    q_measure: 'Comment le mesurez-vous?',
+    q_measure_hint: 'Paramètres concrets de succès',
+    ph_measure: 'Ex: MRR mensuel, nombre de clients payants...',
+    q_deadline: 'D\'ici quand?',
+    ph_deadline: 'Ex: Juin 2026 (18 mois)',
+    q_impact: 'Qu\'est-ce qui changera dans votre vie?',
+    ph_impact: 'Ex: J\'aurai plus de liberté...',
+    s4_title: 'Vos ressources',
+    s4_subtitle: 'Découvrez vos points forts',
+    q_peak: 'Rappelez-vous un moment où vous étiez au sommet',
+    q_peak_hint: 'Un moment où tout fonctionnait parfaitement',
+    ph_peak: 'Ex: L\'année dernière quand j\'ai terminé...',
+    q_actions: 'Qu\'avez-vous fait exactement?',
+    ph_actions: 'Ex: Je me suis organisé avec un plan précis...',
+    q_physical: 'Comment vous sentiez-vous physiquement?',
+    q_physical_hint: 'Énergie, posture, sensations corporelles',
+    ph_physical: 'Ex: Énergique, concentré...',
+    q_other_resources: 'Autres ressources que vous possédez',
+    q_other_resources_hint: 'Compétences, talents, expériences',
+    ph_other_resources: 'Ex: Compétences techniques avancées...',
+    q_activate: 'Comment réactiver ces ressources?',
+    ph_activate: 'Ex: Créer une routine matinale...',
+    s5_title: 'Analyse de la situation',
+    s5_subtitle: 'Évaluons le contexte actuel',
+    q_resources: 'Ressources matérielles et compétences',
+    q_resources_hint: 'Argent, temps, outils, connaissances',
+    ph_resources: 'Ex: Ordinateur performant...',
+    q_missing: 'Que vous manque-t-il?',
+    ph_missing: 'Ex: Expérience en marketing digital...',
+    q_obstacles: 'Obstacles et défis',
+    q_obstacles_hint: 'Qu\'est-ce qui pourrait vous arrêter?',
+    ph_obstacles: 'Ex: Équilibrer le travail actuel...',
+    q_risks: 'Risques possibles',
+    ph_risks: 'Ex: Perdre les clients actuels...',
+    q_opportunities: 'Opportunités',
+    q_opportunities_hint: 'Que pouvez-vous exploiter?',
+    ph_opportunities: 'Ex: Marché en croissance pour les outils B2B...',
+    s6_title: 'Plan d\'action',
+    s6_subtitle: 'Comment vous atteindrez votre objectif',
+    q_first_step: 'Première étape concrète',
+    q_first_step_hint: 'Que ferez-vous dans les 7 prochains jours?',
+    ph_first_step: 'Ex: Dans les 7 prochains jours, j\'interrogerai...',
+    q_next_steps: '5 étapes suivantes',
+    ph_next_steps: 'Ex: 1) Créer un MVP en 4 semaines...',
+    q_support: 'Qui peut vous aider?',
+    q_support_hint: 'Mentors, collègues, experts',
+    ph_support: 'Ex: Un mentor avec expérience en SaaS...',
+    q_contacts: 'Personnes à contacter',
+    ph_contacts: 'Ex: Jean (ami marketeur)...',
+    q_motivation: 'Comment resterez-vous motivé?',
+    ph_motivation: 'Ex: Célébrer chaque étape...',
+    q_milestones: 'Jalons',
+    q_milestones_hint: 'Objectifs intermédiaires à célébrer',
+    ph_milestones: 'Ex: Mois 1: Validation de l\'idée...',
+    final_congrats: '🎯 Félicitations!',
+    final_text: 'Générons maintenant votre stratégie complète.',
+    result_tagline: 'Votre Stratégie',
+    map_title: '🎯 VOTRE OBJECTIF',
+    result_ready: '📝 Votre Stratégie est Prête!',
+    result_instructions: 'Cliquez sur l\'un des boutons pour copier le prompt et ouvrir l\'IA:',
+    result_cta: 'Le prompt sera automatiquement copié. Appuyez ensuite sur CTRL+V (ou CMD+V) pour le coller dans le chat!',
+    footer_system: 'Système PNL',
+    map_identity: '💎 IDENTITÉ & VALEURS',
+    map_state: '⚡ ÉTAT DE RESSOURCE',
+    map_motivation: '🎯 MOTIVATION',
+    map_resources: '📊 RESSOURCES',
+    map_challenges: '⚠️ DÉFIS',
+    map_plan: '🚀 PLAN'
+  }
+};
+
+const META = {
+  it: {
+    nom: { k: ['successo','realizzazione','crescita','miglioramento','sviluppo','cambiamento','comunicazione','relazione','problema','soluzione'], q: w => `Hai menzionato "${w}". Cosa intendi esattamente per ${w}?` },
+    verb: { k: ['migliorare','crescere','sviluppare','cambiare','comunicare','relazionarsi','risolvere','creare','raggiungere'], q: v => `Hai scritto "${v}". Come specificamente intendi ${v}?` },
+    univ: { k: ['sempre','mai','tutti','nessuno','ogni','tutto','niente','completamente'], q: w => `Hai detto "${w}". Davvero ${w}? Puoi essere più specifico?` },
+    comp: { k: ['meglio','peggio','più','meno','maggiore','minore'], q: w => `Hai usato "${w}". ${w.charAt(0).toUpperCase()+w.slice(1)} rispetto a cosa?` },
+    short: { t: 15, q: () => 'La tua risposta sembra un po\' sintetica. Puoi aggiungere più dettagli?' }
+  },
+  en: {
+    nom: { k: ['success','achievement','growth','improvement','development','change','communication','relationship','problem','solution'], q: w => `You mentioned "${w}". What exactly do you mean by ${w}?` },
+    verb: { k: ['improve','grow','develop','change','communicate','relate','solve','create','achieve'], q: v => `You wrote "${v}". How specifically do you mean to ${v}?` },
+    univ: { k: ['always','never','all','none','every','everything','nothing','completely'], q: w => `You said "${w}". Really ${w}? Can you be more specific?` },
+    comp: { k: ['better','worse','more','less','greater','smaller'], q: w => `You used "${w}". ${w.charAt(0).toUpperCase()+w.slice(1)} compared to what?` },
+    short: { t: 15, q: () => 'Your answer seems a bit brief. Can you add more details?' }
+  },
+  fr: {
+    nom: { k: ['succès','réalisation','croissance','amélioration','développement','changement','communication','relation','problème','solution'], q: w => `Vous avez mentionné "${w}". Qu'entendez-vous exactement par ${w}?` },
+    verb: { k: ['améliorer','grandir','développer','changer','communiquer','résoudre','créer','atteindre'], q: v => `Vous avez écrit "${v}". Comment spécifiquement entendez-vous ${v}?` },
+    univ: { k: ['toujours','jamais','tous','aucun','chaque','tout','rien','complètement'], q: w => `Vous avez dit "${w}". Vraiment ${w}? Pouvez-vous être plus précis?` },
+    comp: { k: ['mieux','pire','plus','moins'], q: w => `Vous avez utilisé "${w}". ${w.charAt(0).toUpperCase()+w.slice(1)} par rapport à quoi?` },
+    short: { t: 15, q: () => 'Votre réponse semble un peu brève. Pouvez-vous ajouter plus de détails?' }
+  }
+};
+
+let currentLang = 'it';
+let currentSection = 1;
+let userData = {};
+let generatedPrompt = '';
+let currentFieldProcessing = '';
+let metamodelQueue = [];
+
+const FIELD_IDS = ['nome','situazioneAttuale','giornataTipo','realizzazione','flow','sogno','futuro','valori','obiettivo','motivazione','misura','scadenza','impatto','momentoRisorsa','azioniRisorsa','sensazioniRisorsa','altreRisorse','riattivazioneRisorse','risorse','mancanze','ostacoli','rischi','opportunita','primoStep','stepSuccessivi','supporto','supportoPersone','motivazionePiano','milestone'];
+
+// VIDEO MODAL
+function openVideoModal() {
+  document.getElementById('videoModal').classList.add('active');
+  const video = document.getElementById('tutorialVideo');
+  video.play();
+}
+
+function closeVideoModal() {
+  document.getElementById('videoModal').classList.remove('active');
+  const video = document.getElementById('tutorialVideo');
+  video.pause();
+}
+
+function closeMetamodelModal() {
+  document.getElementById('metamodelModal').classList.remove('active');
+}
+
+function changeLanguage(lang) { 
+  currentLang = lang; 
+  localStorage.setItem('unlockLang', lang); 
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active')); 
+  document.querySelector(`[data-lang="${lang}"]`).classList.add('active'); 
+  updateTranslations(); 
+}
+
+function updateTranslations() { 
+  const t = TRANSLATIONS[currentLang]; 
+  document.querySelectorAll('[data-i18n]').forEach(el => { 
+    const key = el.getAttribute('data-i18n'); 
+    if (t[key]) el.textContent = t[key]; 
+  }); 
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { 
+    const key = el.getAttribute('data-i18n-placeholder'); 
+    if (t[key]) el.placeholder = t[key]; 
+  }); 
+  updateProgress(); 
+}
+
+function updateProgress() { 
+  const progressLabels = { it: { step: 'Passo', of: 'di' }, en: { step: 'Step', of: 'of' }, fr: { step: 'Étape', of: 'de' } }; 
+  const labels = progressLabels[currentLang]; 
+  document.getElementById('progressFill').style.width = (currentSection / 6 * 100) + '%'; 
+  document.getElementById('progressText').textContent = `${labels.step} ${currentSection} ${labels.of} 6`; 
+}
+
+function goToSection(n) { 
+  saveData(); 
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active')); 
+  document.getElementById('section' + n).classList.add('active'); 
+  currentSection = n; 
+  updateProgress(); 
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}
+
+function goToFinal() { 
+  saveData(); 
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active')); 
+  document.getElementById('finalSection').classList.add('active'); 
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}
+
+function saveData() { 
+  FIELD_IDS.forEach(id => { 
+    const el = document.getElementById(id); 
+    if (el) userData[id] = el.value.trim(); 
+  }); 
+  localStorage.setItem('unlockData', JSON.stringify(userData)); 
+}
+
+function analyzeResponse(id, text) { 
+  if (!text || !text.trim()) return null; 
+  const meta = META[currentLang]; 
+  const words = text.toLowerCase().split(/\s+/); 
+  if (words.length < meta.short.t) return { type: 'short', q: meta.short.q() }; 
+  for (let word of meta.nom.k) if (text.toLowerCase().includes(word)) return { type: 'nom', word: word, q: meta.nom.q(word) }; 
+  for (let verb of meta.verb.k) if (text.toLowerCase().includes(verb)) return { type: 'verb', word: verb, q: meta.verb.q(verb) }; 
+  for (let quant of meta.univ.k) if (text.toLowerCase().includes(quant)) return { type: 'univ', word: quant, q: meta.univ.q(quant) }; 
+  for (let comp of meta.comp.k) if (text.toLowerCase().includes(comp)) return { type: 'comp', word: comp, q: meta.comp.q(comp) }; 
+  return null; 
+}
+
+function validateAndContinue(from, to) { 
+  saveData(); 
+  metamodelQueue = []; 
+  const fields = getSectionFields(from); 
+  fields.forEach(id => { 
+    const el = document.getElementById(id); 
+    if (el) { 
+      const analysis = analyzeResponse(id, el.value.trim()); 
+      if (analysis) metamodelQueue.push({ id: id, analysis: analysis }); 
+    } 
+  }); 
+  if (metamodelQueue.length > 0) showMetamodel(metamodelQueue[0]); 
+  else goToSection(to); 
+}
+
+function getSectionFields(n) { 
+  const map = { 
+    1: ['nome', 'situazioneAttuale', 'giornataTipo'], 
+    2: ['realizzazione', 'flow', 'sogno', 'futuro', 'valori'], 
+    3: ['obiettivo', 'motivazione', 'misura', 'scadenza', 'impatto'], 
+    4: ['momentoRisorsa', 'azioniRisorsa', 'sensazioniRisorsa', 'altreRisorse', 'riattivazioneRisorse'], 
+    5: ['risorse', 'mancanze', 'ostacoli', 'rischi', 'opportunita'], 
+    6: ['primoStep', 'stepSuccessivi', 'supporto', 'supportoPersone', 'motivazionePiano', 'milestone'] 
+  }; 
+  return map[n] || []; 
+}
+
+function showMetamodel(item) { 
+  currentFieldProcessing = item.id; 
+  document.getElementById('metamodelQuestion').textContent = item.analysis.q || ''; 
+  document.getElementById('metamodelInput').value = ''; 
+  document.getElementById('metamodelModal').classList.add('active'); 
+}
+
+function confirmMetamodel() { 
+  const refinement = document.getElementById('metamodelInput').value.trim(); 
+  if (refinement) { 
+    const el = document.getElementById(currentFieldProcessing); 
+    if (el) { 
+      el.value = el.value + ' ' + refinement; 
+      userData[currentFieldProcessing] = el.value.trim(); 
+    } 
+  } 
+  metamodelQueue.shift(); 
+  document.getElementById('metamodelModal').classList.remove('active'); 
+  if (metamodelQueue.length > 0) setTimeout(() => showMetamodel(metamodelQueue[0]), 300); 
+  else { 
+    const nextSection = currentSection + 1; 
+    if (nextSection <= 6) goToSection(nextSection); 
+    else goToFinal(); 
+  } 
+}
+
+function skipMetamodel() { 
+  metamodelQueue = []; 
+  document.getElementById('metamodelModal').classList.remove('active'); 
+  const nextSection = currentSection + 1; 
+  if (nextSection <= 6) goToSection(nextSection); 
+  else goToFinal(); 
+}
+
+function generateStrategy() { 
+  if (!userData.nome || !userData.obiettivo) { 
+    const alerts = { it: '⚠️ Compila almeno nome e obiettivo', en: '⚠️ Fill in at least name and goal', fr: '⚠️ Remplissez au moins le nom et l\'objectif' }; 
+    alert(alerts[currentLang]); 
+    return; 
+  } 
+  generateMindMap(); 
+  generatedPrompt = generatePrompt(); 
+  document.getElementById('formPage').classList.remove('active'); 
+  document.getElementById('resultPage').classList.add('active'); 
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}
+
+function generateMindMap() { 
+  const t = TRANSLATIONS[currentLang]; 
+  document.getElementById('mapObjective').textContent = userData.obiettivo || 'N/A'; 
+  const branches = [ 
+    { t: t.map_identity, c: userData.valori || 'N/A' }, 
+    { t: t.map_state, c: userData.momentoRisorsa || 'N/A' }, 
+    { t: t.map_motivation, c: userData.motivazione || 'N/A' }, 
+    { t: t.map_resources, c: userData.risorse || 'N/A' }, 
+    { t: t.map_challenges, c: userData.ostacoli || 'N/A' }, 
+    { t: t.map_plan, c: userData.primoStep || 'N/A' } 
+  ]; 
+  const container = document.getElementById('mapBranches'); 
+  container.innerHTML = ''; 
+  branches.forEach(branch => { 
+    const div = document.createElement('div'); 
+    div.className = 'branch'; 
+    div.innerHTML = `<div class="branch-title">${branch.t}</div><div class="branch-content">${branch.c}</div>`; 
+    container.appendChild(div); 
+  }); 
+}
+
+function generatePrompt() { 
+  const prompts = { 
+    it: `Sei un Coach Professionista esperto in PNL con 20+ anni di esperienza.
+
+CONTESTO CLIENTE
+Nome: ${userData.nome || '[Non specificato]'}
+Situazione: ${userData.situazioneAttuale || '[Non specificato]'}
+Giornata tipo: ${userData.giornataTipo || '[Non specificato]'}
+
+IDENTITÀ E VALORI
+Valori: ${userData.valori || '[Non specificato]'}
+Realizzazione: ${userData.realizzazione || '[Non specificato]'}
+Flow: ${userData.flow || '[Non specificato]'}
+Sogno: ${userData.sogno || '[Non specificato]'}
+Visione 5 anni: ${userData.futuro || '[Non specificato]'}
+
+OBIETTIVO
+Obiettivo: ${userData.obiettivo || '[Non specificato]'}
+Motivazione: ${userData.motivazione || '[Non specificato]'}
+Misurazione: ${userData.misura || '[Non specificato]'}
+Scadenza: ${userData.scadenza || '[Non specificato]'}
+Impatto: ${userData.impatto || '[Non specificato]'}
+
+RISORSE
+Momento top: ${userData.momentoRisorsa || '[Non specificato]'}
+Azioni: ${userData.azioniRisorsa || '[Non specificato]'}
+Sensazioni fisiche: ${userData.sensazioniRisorsa || '[Non specificato]'}
+Altre risorse: ${userData.altreRisorse || '[Non specificato]'}
+Riattivazione: ${userData.riattivazioneRisorse || '[Non specificato]'}
+
+ANALISI
+Risorse: ${userData.risorse || '[Non specificato]'}
+Mancanze: ${userData.mancanze || '[Non specificato]'}
+Ostacoli: ${userData.ostacoli || '[Non specificato]'}
+Rischi: ${userData.rischi || '[Non specificato]'}
+Opportunità: ${userData.opportunita || '[Non specificato]'}
+
+PIANO D'AZIONE
+Primo step: ${userData.primoStep || '[Non specificato]'}
+Step successivi: ${userData.stepSuccessivi || '[Non specificato]'}
+Supporto: ${userData.supporto || '[Non specificato]'}
+Persone: ${userData.supportoPersone || '[Non specificato]'}
+Motivazione: ${userData.motivazionePiano || '[Non specificato]'}
+Milestone: ${userData.milestone || '[Non specificato]'}
+
+Crea un'analisi strategica COMPLETA che includa:
+1. EXECUTIVE SUMMARY (150-200 parole)
+2. ANALISI SWOT DETTAGLIATA
+3. OBIETTIVO SMART COMPLETO
+4. PIANO OPERATIVO (4 FASI: 0-3, 3-6, 6-12, 12-18 mesi)
+5. STRATEGIE ANCORAGGIO PNL (3 tecniche)
+6. PIANO MITIGAZIONE RISCHI
+7. NETWORK E SUPPORTO
+8. MAPPA MENTALE TESTUALE
+9. QUICK WINS (30 giorni - 5-7 azioni)
+10. MESSAGGIO MOTIVAZIONALE
+
+Stile: Professionale, motivazionale, concreto.
+Lunghezza: 2500-3500 parole.
+Usa emoji per leggibilità.`, 
+    en: `You are a Professional Coach expert in NLP with 20+ years of experience.
+
+CLIENT CONTEXT
+Name: ${userData.nome || '[Not specified]'}
+Situation: ${userData.situazioneAttuale || '[Not specified]'}
+Typical day: ${userData.giornataTipo || '[Not specified]'}
+
+IDENTITY & VALUES
+Values: ${userData.valori || '[Not specified]'}
+Fulfillment: ${userData.realizzazione || '[Not specified]'}
+Flow: ${userData.flow || '[Not specified]'}
+Dream: ${userData.sogno || '[Not specified]'}
+5-year vision: ${userData.futuro || '[Not specified]'}
+
+GOAL
+Goal: ${userData.obiettivo || '[Not specified]'}
+Motivation: ${userData.motivazione || '[Not specified]'}
+Measurement: ${userData.misura || '[Not specified]'}
+Deadline: ${userData.scadenza || '[Not specified]'}
+Impact: ${userData.impatto || '[Not specified]'}
+
+RESOURCES
+Peak moment: ${userData.momentoRisorsa || '[Not specified]'}
+Actions: ${userData.azioniRisorsa || '[Not specified]'}
+Physical sensations: ${userData.sensazioniRisorsa || '[Not specified]'}
+Other resources: ${userData.altreRisorse || '[Not specified]'}
+Reactivation: ${userData.riattivazioneRisorse || '[Not specified]'}
+
+ANALYSIS
+Resources: ${userData.risorse || '[Not specified]'}
+Missing: ${userData.mancanze || '[Not specified]'}
+Obstacles: ${userData.ostacoli || '[Not specified]'}
+Risks: ${userData.rischi || '[Not specified]'}
+Opportunities: ${userData.opportunita || '[Not specified]'}
+
+ACTION PLAN
+First step: ${userData.primoStep || '[Not specified]'}
+Next steps: ${userData.stepSuccessivi || '[Not specified]'}
+Support: ${userData.supporto || '[Not specified]'}
+Contacts: ${userData.supportoPersone || '[Not specified]'}
+Motivation: ${userData.motivazionePiano || '[Not specified]'}
+Milestones: ${userData.milestone || '[Not specified]'}
+
+Create a COMPLETE strategic analysis including:
+1. EXECUTIVE SUMMARY (150-200 words)
+2. DETAILED SWOT ANALYSIS
+3. COMPLETE SMART GOAL
+4. OPERATIONAL PLAN (4 PHASES: 0-3, 3-6, 6-12, 12-18 months)
+5. NLP ANCHORING STRATEGIES (3 techniques)
+6. RISK MITIGATION PLAN
+7. NETWORK & SUPPORT
+8. TEXTUAL MIND MAP
+9. QUICK WINS (30 days - 5-7 actions)
+10. MOTIVATIONAL MESSAGE
+
+Style: Professional, motivational, concrete.
+Length: 2500-3500 words.
+Use emojis for readability.`, 
+    fr: `Vous êtes un Coach Professionnel expert en PNL avec 20+ ans d'expérience.
+
+CONTEXTE CLIENT
+Nom: ${userData.nome || '[Non spécifié]'}
+Situation: ${userData.situazioneAttuale || '[Non spécifié]'}
+Journée type: ${userData.giornataTipo || '[Non spécifié]'}
+
+IDENTITÉ & VALEURS
+Valeurs: ${userData.valori || '[Non spécifié]'}
+Accomplissement: ${userData.realizzazione || '[Non spécifié]'}
+Flow: ${userData.flow || '[Non spécifié]'}
+Rêve: ${userData.sogno || '[Non spécifié]'}
+Vision 5 ans: ${userData.futuro || '[Non spécifié]'}
+
+OBJECTIF
+Objectif: ${userData.obiettivo || '[Non spécifié]'}
+Motivation: ${userData.motivazione || '[Non spécifié]'}
+Mesure: ${userData.misura || '[Non spécifié]'}
+Échéance: ${userData.scadenza || '[Non spécifié]'}
+Impact: ${userData.impatto || '[Non spécifié]'}
+
+RESSOURCES
+Moment sommet: ${userData.momentoRisorsa || '[Non spécifié]'}
+Actions: ${userData.azioniRisorsa || '[Non spécifié]'}
+Sensations physiques: ${userData.sensazioniRisorsa || '[Non spécifié]'}
+Autres ressources: ${userData.altreRisorse || '[Non spécifié]'}
+Réactivation: ${userData.riattivazioneRisorse || '[Non spécifié]'}
+
+ANALYSE
+Ressources: ${userData.risorse || '[Non spécifié]'}
+Manques: ${userData.mancanze || '[Non spécifié]'}
+Obstacles: ${userData.ostacoli || '[Non spécifié]'}
+Risques: ${userData.rischi || '[Non spécifié]'}
+Opportunités: ${userData.opportunita || '[Non spécifié]'}
+
+PLAN D'ACTION
+Première étape: ${userData.primoStep || '[Non spécifié]'}
+Étapes suivantes: ${userData.stepSuccessivi || '[Non spécifié]'}
+Soutien: ${userData.supporto || '[Non spécifié]'}
+Contacts: ${userData.supportoPersone || '[Non spécifié]'}
+Motivation: ${userData.motivazionePiano || '[Non spécifié]'}
+Jalons: ${userData.milestone || '[Non spécifié]'}
+
+Créez une analyse stratégique COMPLÈTE incluant:
+1. RÉSUMÉ EXÉCUTIF (150-200 mots)
+2. ANALYSE SWOT DÉTAILLÉE
+3. OBJECTIF SMART COMPLET
+4. PLAN OPÉRATIONNEL (4 PHASES: 0-3, 3-6, 6-12, 12-18 mois)
+5. STRATÉGIES D'ANCRAGE PNL (3 techniques)
+6. PLAN D'ATTÉNUATION DES RISQUES
+7. RÉSEAU & SOUTIEN
+8. CARTE MENTALE TEXTUELLE
+9. QUICK WINS (30 jours - 5-7 actions)
+10. MESSAGE MOTIVATIONNEL
+
+Style: Professionnel, motivationnel, concret.
+Longueur: 2500-3500 mots.
+Utilisez des emojis pour la lisibilité.` 
+  }; 
+  return prompts[currentLang]; 
+}
+
+function copyToClipboard(text) { 
+  return navigator.clipboard.writeText(text).then(() => { 
+    showNotification(); 
+    return true; 
+  }).catch(err => { 
+    console.error('Copy error:', err); 
+    const textarea = document.createElement('textarea'); 
+    textarea.value = text; 
+    textarea.style.position = 'fixed'; 
+    textarea.style.opacity = '0'; 
+    document.body.appendChild(textarea); 
+    textarea.select(); 
+    try { 
+      document.execCommand('copy'); 
+      showNotification(); 
+      return true; 
+    } catch (e) { 
+      console.error('Fallback copy failed:', e); 
+      return false; 
+    } finally { 
+      document.body.removeChild(textarea); 
+    } 
+  }); 
+}
+
+function showNotification() { 
+  const notif = document.getElementById('copyNotification'); 
+  notif.classList.add('show'); 
+  setTimeout(() => notif.classList.remove('show'), 3500); 
+}
+
+function openClaude() { 
+  copyToClipboard(generatedPrompt).then(() => { 
+    setTimeout(() => { 
+      window.open('https://claude.ai/new', '_blank'); 
+    }, 500); 
+  }); 
+}
+
+function openChatGPT() { 
+  copyToClipboard(generatedPrompt).then(() => { 
+    setTimeout(() => { 
+      window.open('https://chatgpt.com/', '_blank'); 
+    }, 500); 
+  }); 
+}
+
+function backToForm() { 
+  document.getElementById('resultPage').classList.remove('active'); 
+  document.getElementById('formPage').classList.add('active'); 
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active')); 
+  document.getElementById('finalSection').classList.add('active'); 
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+}
+
+function downloadStrategy() { 
+  const filename = { it: 'UNLOCK_Strategia', en: 'UNLOCK_Strategy', fr: 'UNLOCK_Strategie' }; 
+  const txt = `UNLOCK - ${filename[currentLang].toUpperCase()}\nEnrico La Noce\n\n${generatedPrompt}`; 
+  const blob = new Blob([txt], { type: 'text/plain;charset=utf-8' }); 
+  const url = URL.createObjectURL(blob); 
+  const a = document.createElement('a'); 
+  a.href = url; 
+  a.download = `${filename[currentLang]}_${(userData.nome || 'Client').replace(/\s+/g, '_')}.txt`; 
+  a.click(); 
+  URL.revokeObjectURL(url); 
+}
+
+window.addEventListener('DOMContentLoaded', () => { 
+  const savedLang = localStorage.getItem('unlockLang') || 'it'; 
+  if (savedLang !== 'it') changeLanguage(savedLang); 
+  const savedData = localStorage.getItem('unlockData'); 
+  if (savedData) { 
+    try { 
+      userData = JSON.parse(savedData); 
+      FIELD_IDS.forEach(id => { 
+        const el = document.getElementById(id); 
+        if (el && userData[id]) el.value = userData[id]; 
+      }); 
+    } catch (e) { 
+      console.error('Error loading saved data:', e); 
+    } 
+  } 
+});
+
+updateProgress();
+console.log('✅ UNLOCK - Versione Finale Pronta per la Pubblicazione! | Enrico La Noce');
+</script>
+
+</body>
+</html>
